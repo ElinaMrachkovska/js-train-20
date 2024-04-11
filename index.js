@@ -84,14 +84,7 @@ Car.prototype.brake = function (amount) {
  * | fuelType     |  "Petrol"           |
  * | speed        |  0                  |
  */
-const car = new Car(
-  (brand = "Audi"),
-  (model = "A6"),
-  (year = 2018),
-  (mileage = 30000),
-  (fuelType = "Petrol"),
-  (speed = 0)
-);
+const car = new Car("Audi", "A6", 2018, 30000, "Petrol", 0);
 // Викличемо функції toString та valueOf об'єкта car
 console.log(car.toString());
 console.log(car.valueOf());
@@ -156,17 +149,17 @@ Truck.prototype.tow = function (weight) {
 };
 // Створюємо новий екземпляр об'єкта Truck
 const newTruck = new Truck(
-  (brand = "Toyota"),
-  (model = "Tundra"),
-  (year = 2019),
-  (mileage = 20000),
-  (color = "Red"),
-  (engineType = "V8"),
-  (towingCapacity = 10000),
-  (fuelType = "Gasoline"),
-  (transmissionType = "Automatic"),
-  (doors = 4),
-  (weight = 5600)
+  "Toyota",
+  "Tundra",
+  2019,
+  20000,
+  "Red",
+  "V8",
+  10000,
+  "Gasoline",
+  "Automatic",
+  4,
+  5600
 );
 /*
  * Екземпляр об'єкту: myTruck
@@ -245,11 +238,6 @@ ElectricCar.prototype.toString = function () {
  * | batteryCapacity | 100               |
  */
 
-const tesla = new ElectricCar(
-  (brand = "Model S"),
-  (year = 2020),
-  (mileage = 10000),
-  (batteryCapacity = 100)
-);
+const tesla = new ElectricCar("Model S", 2020, 10000, 100);
 // Викликаємо метод toString об'єкту tesla та виводимо в консоль
 console.log(tesla.toString());
